@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 入力ボックス全体 */
+.input-box {
+  display: flex;
+  margin: 10px auto 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  max-width: 376px;
+  font-size: 1.2em;
+  overflow: hidden;
+  padding-right: 24px;  ▼ の幅分だけ余白
+}
+
+.input-box select {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  border-right: 1px solid #ccc; /* ← 中央線をここで出す */
+}
+
+/* 入力欄＋単位をまとめる */
+.input-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-wrap input[type=number] {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.input-wrap .unit {
+  margin-left: 4px;
+  color: black;
+}
+
+/* 表示ボックス */
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  max-width: 400px;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+.box .left {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.box .right {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.2em;    /* 複数行のとき自然に折り返す */
+}
+
+/* 数値と単位を色分け */
+.num {
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.unit {
+  color: black;
+  font-weight: normal;
+}
+
+/* 水の欄だけ背景色 */
+.water {
+  background-color: #cceeff;
+}
+
+.link-button {
+  position: fixed;       /* 画面に固定 */
+  bottom: 20px;          /* 下から20pxの位置 */
+  left: 50%;             /* 中央寄せ */
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.link-button:hover {
+  background-color: #45a049;
+}
+
+
+/* レスポンシブ */
+@media (max-width: 500px) {
+  .box {
+    flex-direction: column;
+  }
+  .box .left {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
