@@ -159,7 +159,7 @@ body {
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 400px) {
+@media (max-width: 370px) {
   .box, .display-box, .input-box {
     flex-direction: column;
   }
@@ -173,3 +173,4 @@ body {
 }
 
 /* ========================= */
+
