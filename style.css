@@ -28,7 +28,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 12px;
   width: 95%;
-  max-width: 370px;
+  max-width: 350px;
   font-size: 1.2em;
   overflow: hidden;
 }
@@ -173,4 +173,5 @@ body {
 }
 
 /* ========================= */
+
 
