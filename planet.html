@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宇宙ってどでかいな</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">惑星情報</h1>
+
+<div class="input-box">
+  <select id="planet">
+    <option value="Sun">太陽</option>
+    <option value="Moon">月</option>
+    <option value="Mercury">水星</option>
+    <option value="Venus">金星</option>
+    <option value="Mars">火星</option>
+    <option value="Jupiter">木星</option>
+    <option value="Saturn">土星</option>
+    <option value="Uranus">天王星</option>
+    <option value="Neptune">海王星</option>
+  </select>
+</div>
+
+<div class="box">
+  <div class="left">地球からの距離</div>
+  <div class="right" id="result1"><span class="num">0</span><span class="unit"> km</span></div>
+</div>
+
+<div class="box">
+  <div class="left">直径</div>
+  <div class="right" id="result2"><span class="num">0</span><span class="unit"> km</span></div>
+</div>
+
+<div class="box">
+  <div class="left">地球の何倍</div>
+  <div class="right" id="result3"><span class="num">0</span><span class="unit"> 倍</span></div>
+</div>
+
+<div class="box">
+  <div class="left">ジャンボ機で<br>行ったとしたら</div>
+  <div class="right" id="result4"><span class="num">0</span></div>
+</div>
+
+<!-- 補足情報を追加 -->
+<div class="planet-info">
+  <p>地球の直径は <span class="num">12,742</span> km</p>
+  <p>地球1周は <span class="num">40,075</span> km</p>
+</div>
+
+
+  <script src="script_planet.js"></script>
+  <a href="index.html" class="link-button">ご飯炊くぞ！</a>
+</body>
+</html>
